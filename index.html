@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="visor" id="saida">
+
+            </div>
+            <div class="buttons">
+                <!--
+                     1 2 3 4 5 6 7 8 9 0
+                     + - * /  
+                     clear enter
+                -->
+                <div class="buttons__operations">
+                    <input type="button" value="+" onclick="somar()">
+                    <input type="button" value="-" onclick="subtrair()">
+                    <input type="button" value="*" onclick="multiplicar()">
+                    <input type="button" value="/" onclick="dividir()">
+                </div>
+                <div class="buttons__numbers">
+                    <div class="btn__number">
+                        <input type="button" value="1" onclick="numero(this)">
+                        <input type="button" value="2" onclick="numero(this)">
+                        <input type="button" value="3" onclick="numero(this)">
+                        <input type="button" value="4" onclick="numero(this)">
+                        <input type="button" value="5" onclick="numero(this)">
+                        <input type="button" value="6" onclick="numero(this)">
+                        <input type="button" value="7" onclick="numero(this)">
+                        <input type="button" value="8" onclick="numero(this)">
+                        <input type="button" value="9" onclick="numero(this)">
+                        <input type="button" value="0" onclick="numero(this)">
+                        <input type="button" value="C" onclick="clean()">
+                        <input type="button" value="Enter" onclick="enter()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

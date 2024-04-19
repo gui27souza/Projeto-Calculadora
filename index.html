@@ -11,34 +11,29 @@
         <div class="container" id="container">
             <div class="visor" id="saida"></div>
             <div class="buttons">
-                <!--
-                     1 2 3 4 5 6 7 8 9 0
-                     + - * /  
-                     . clear enter
-                -->
                 <div class="operations">
-                    <input type="button" value="+" onclick="calcular(this)" class="bttn">
-                    <input type="button" value="-" onclick="calcular(this)" class="bttn">
-                    <input type="button" value="*" onclick="calcular(this)" class="bttn">
-                    <input type="button" value="/" onclick="calcular(this)" class="bttn">
+                    <input type="button" value="+" onclick="calcular(this)">
+                    <input type="button" value="-" onclick="calcular(this)">
+                    <input type="button" value="*" onclick="calcular(this)">
+                    <input type="button" value="/" onclick="calcular(this)">
                 </div>
                 <div class="not-operations">
                     <div class="not-enter">
-                        <input type="button" value="1" onclick="numero(this)" class="bttn">
-                        <input type="button" value="2" onclick="numero(this)" class="bttn">
-                        <input type="button" value="3" onclick="numero(this)" class="bttn">
-                        <input type="button" value="4" onclick="numero(this)" class="bttn">
-                        <input type="button" value="5" onclick="numero(this)" class="bttn">
-                        <input type="button" value="6" onclick="numero(this)" class="bttn">
-                        <input type="button" value="7" onclick="numero(this)" class="bttn">
-                        <input type="button" value="8" onclick="numero(this)" class="bttn">
-                        <input type="button" value="9" onclick="numero(this)" class="bttn">
-                        <input type="button" value="0" onclick="numero(this)" class="bttn">
-                        <input type="button" value="." onclick="numero(this)" class="bttn">
-                        <input type="button" value="C" onclick="clean()" class="bttn">
+                        <input type="button" value="1" onclick="numero(this)">
+                        <input type="button" value="2" onclick="numero(this)">
+                        <input type="button" value="3" onclick="numero(this)">
+                        <input type="button" value="4" onclick="numero(this)">
+                        <input type="button" value="5" onclick="numero(this)">
+                        <input type="button" value="6" onclick="numero(this)">
+                        <input type="button" value="7" onclick="numero(this)">
+                        <input type="button" value="8" onclick="numero(this)">
+                        <input type="button" value="9" onclick="numero(this)">
+                        <input type="button" value="0" onclick="numero(this)">
+                        <input type="button" value="." onclick="numero(this)">
+                        <input type="button" value="C" onclick="clean()">
                     </div>
                     <div class="enter">
-                        <input type="button" value="Enter" onclick="enter()" id="enter" class="bttn">
+                        <input type="button" value="Enter" onclick="enter()" id="enter">
                     </div>
                 </div>
             </div>
@@ -46,6 +41,5 @@
     </main>
 
     <script src="script.js"></script>
-    <script src="script_style.js"></script>
 </body>
 </html>

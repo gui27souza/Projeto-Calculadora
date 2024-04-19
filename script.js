@@ -14,7 +14,6 @@ function somar() {
     saida.innerText = ''
     valor = ''
 }
-// Existe algum problema em subtrair numeros de dois ou mais digitos
 function subtrair() {
     operacao = 'subtracao'
     valor_temp = Number(saida.innerText)
@@ -60,3 +59,7 @@ function clean() {
     valor_temp = 0
     operacao = ''
 }
+
+
+// Existe algum problema em subtrair numeros de dois ou mais digitos
+// Operações só vão até 10000

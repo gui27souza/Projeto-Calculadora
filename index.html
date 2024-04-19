@@ -9,23 +9,21 @@
 <body>
     <main>
         <div class="container">
-            <div class="visor" id="saida">
-
-            </div>
+            <div class="visor" id="saida"></div>
             <div class="buttons">
                 <!--
                      1 2 3 4 5 6 7 8 9 0
                      + - * /  
-                     clear enter
+                     . clear enter
                 -->
-                <div class="buttons__operations">
+                <div class="operations">
                     <input type="button" value="+" onclick="somar()">
                     <input type="button" value="-" onclick="subtrair()">
                     <input type="button" value="*" onclick="multiplicar()">
                     <input type="button" value="/" onclick="dividir()">
                 </div>
-                <div class="buttons__numbers">
-                    <div class="btn__number">
+                <div class="not-operations">
+                    <div class="not-enter">
                         <input type="button" value="1" onclick="numero(this)">
                         <input type="button" value="2" onclick="numero(this)">
                         <input type="button" value="3" onclick="numero(this)">
@@ -36,8 +34,11 @@
                         <input type="button" value="8" onclick="numero(this)">
                         <input type="button" value="9" onclick="numero(this)">
                         <input type="button" value="0" onclick="numero(this)">
+                        <input type="button" value="." onclick="numero(this)">
                         <input type="button" value="C" onclick="clean()">
-                        <input type="button" value="Enter" onclick="enter()">
+                    </div>
+                    <div class="enter">
+                        <input type="button" value="Enter" onclick="enter()" id="enter">
                     </div>
                 </div>
             </div>

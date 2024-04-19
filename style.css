@@ -62,7 +62,7 @@ input {
 
     padding: 1rem;
 }
-
+/* 
 .buttons {
     display: flex;
     flex-flow: column;
@@ -78,7 +78,7 @@ input {
 .not-operations {
     display: flex;
     justify-content: center;
-    /* gap: 1rem; */
+    gap: 1rem;
 }
 
 .not-enter {
@@ -95,4 +95,4 @@ input {
     display: grid;
     width: calc(25% - 1rem);
     margin-left: 1rem;
-}
+} */

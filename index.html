@@ -11,6 +11,39 @@
         <div class="container" id="container">
             <div class="visor" id="saida"></div>
             <div class="buttons">
+                <table>
+                    <tr>
+                        <td><input type="button" value="+" onclick="calcular(this)"></td>
+                        <td><input type="button" value="-" onclick="calcular(this)"></td>
+                        <td><input type="button" value="*" onclick="calcular(this)"></td>
+                        <td><input type="button" value="/" onclick="calcular(this)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="numero(this)"></td>
+                        <td><input type="button" value="2" onclick="numero(this)"></td>
+                        <td><input type="button" value="3" onclick="numero(this)"></td>
+                        <td rowspan="4"><input type="button" value="Enter" onclick="enter()" id="enter"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="4" onclick="numero(this)"></td>
+                        <td><input type="button" value="5" onclick="numero(this)"></td>
+                        <td><input type="button" value="6" onclick="numero(this)"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="7" onclick="numero(this)"></td>
+                        <td><input type="button" value="8" onclick="numero(this)"></td>
+                        <td><input type="button" value="9" onclick="numero(this)"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="0" onclick="numero(this)"></td>
+                        <td><input type="button" value="." onclick="numero(ttdhis)"></td>
+                        <td><input type="button" value="C" onclick="clean()"></td>
+                    </tr>
+                </table>
+            <!-- <div class="buttons">
                 <div class="operations">
                     <input type="button" value="+" onclick="calcular(this)">
                     <input type="button" value="-" onclick="calcular(this)">
@@ -36,7 +69,7 @@
                         <input type="button" value="Enter" onclick="enter()" id="enter">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
 

@@ -4,62 +4,49 @@ let valor_temp = 0
 let operacao = ''
 
 function numero(elemento) {
-    valor = elemento.value
-    saida.innerText += valor
+    saida.textContent += elemento.value
 }
 
-function somar() {
-    operacao = 'soma'
-    valor_temp = Number(saida.innerText)
-    saida.innerText = ''
-    valor = ''
-}
-function subtrair() {
-    operacao = 'subtracao'
-    valor_temp = Number(saida.innerText)
-    saida.innerText = ''
-    valor = ''
-}
-function multiplicar() {
-    operacao = 'multiplicacao'
-    valor_temp = Number(saida.innerText)
-    saida.innerText = ''
-    valor = ''
-}
-function dividir() {
-    operacao = 'divisao'
-    valor_temp = Number(saida.innerText)
-    saida.innerText = ''
-    valor = ''
+function calcular(elemento) {
+    operacao = elemento.value
+    valor_temp = Number(saida.textContent)
+    saida.textContent = ''
 }
 
 function enter() {
     switch (operacao) {
-        case 'soma':
-            saida.innerText = Number(valor_temp) + Number(valor)
+        case '+':
+            saida.textContent = Number(valor_temp) + Number(saida.textContent)
+            valor_temp = ''
+            operacao = ''
         break
 
-        case 'subtracao':
-            saida.innerText = Number(valor_temp) - Number(valor)
+        case '-':
+            saida.textContent = Number(valor_temp) - Number(saida.textContent)
+            valor_temp = ''
+            operacao = ''
         break
 
-        case 'multiplicacao':
-            saida.innerText = Number(valor_temp) * Number(valor)
+        case '*':
+            saida.textContent = Number(valor_temp) * Number(saida.textContent)
+            valor_temp = ''
+            operacao = ''
         break
 
-        case 'divisao':
-            saida.innerText = Number(valor_temp) / Number(valor)
+        case '/':
+            saida.textContent = Number(valor_temp) / Number(saida.textContent)
+            valor_temp = ''
+            operacao = ''
         break
     }
 }
 
 function clean() {
-    saida.innerText = ''
+    saida.textContent = ''
     valor = 0
     valor_temp = 0
     operacao = ''
 }
 
-
-// Existe algum problema em subtrair numeros de dois ou mais digitos
-// Operações só vão até 10000
+// Imprecisão em 1.2 - 0.3
+// Dá p colocar . duas ou mais vezes

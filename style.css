@@ -12,8 +12,8 @@ body {
 .container {
     background-color: hsl(208, 100%, 97%);
 
-    /* height: 60rem; */
-    width: 60rem;
+    width: 40%;
+    min-width: 30rem;
 }
 
 .visor {
@@ -43,22 +43,16 @@ input {
     margin: 0;
 
     padding: 1rem;
-
-    height: 45px;
-    width: 150px;
 }
 
 .buttons {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, auto); */
     display: flex;
     flex-flow: column;
 }
 
 .operations {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .not-operations {
@@ -69,14 +63,11 @@ input {
     width: 75%;
 
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .enter {
     display: grid;
     width: 25%;   
-}
-#enter {
-    height: 180px;
 }

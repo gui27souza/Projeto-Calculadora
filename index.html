@@ -9,68 +9,38 @@
 <body>
     <main>
         <div class="container" id="container">
-            <div class="visor" id="saida"></div>
-            <div class="buttons">
+            <div class="visor"><span id="saida"></span></div>
+            <div class="buttons-table">
                 <table>
                     <tr>
-                        <td><input type="button" value="+" onclick="calcular(this)"></td>
-                        <td><input type="button" value="-" onclick="calcular(this)"></td>
-                        <td><input type="button" value="*" onclick="calcular(this)"></td>
-                        <td><input type="button" value="/" onclick="calcular(this)"></td>
+                        <td><input type="button" value="+" onclick="calcular(this)" class="button operation"></td>
+                        <td><input type="button" value="-" onclick="calcular(this)" class="button operation"></td>
+                        <td><input type="button" value="x" onclick="calcular(this)" class="button operation"></td>
+                        <td><input type="button" value="÷" onclick="calcular(this)" class="button operation"></td>
                     </tr>
                     <tr>
-                        <td><input type="button" value="1" onclick="numero(this)"></td>
-                        <td><input type="button" value="2" onclick="numero(this)"></td>
-                        <td><input type="button" value="3" onclick="numero(this)"></td>
-                        <td rowspan="4" id="td-enter"><input type="button" value="Enter" onclick="enter()" id="enter"></td>
-                    </tr>
-                    
+                        <td><input type="button" value="1" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="2" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="3" onclick="numero(this)" class="button number"></td>
+                        <td rowspan="4" id="td-enter"><input type="button" value="Enter" onclick="enter()" id="enter" class="button enter"></td>
+                    </tr>                    
                     <tr>
-                        <td><input type="button" value="4" onclick="numero(this)"></td>
-                        <td><input type="button" value="5" onclick="numero(this)"></td>
-                        <td><input type="button" value="6" onclick="numero(this)"></td>
-                    </tr>
-                    
+                        <td><input type="button" value="4" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="5" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="6" onclick="numero(this)" class="button number"></td>
+                    </tr>                    
                     <tr>
-                        <td><input type="button" value="7" onclick="numero(this)"></td>
-                        <td><input type="button" value="8" onclick="numero(this)"></td>
-                        <td><input type="button" value="9" onclick="numero(this)"></td>
-                    </tr>
-                    
+                        <td><input type="button" value="7" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="8" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="9" onclick="numero(this)" class="button number"></td>
+                    </tr>                    
                     <tr>
-                        <td><input type="button" value="0" onclick="numero(this)"></td>
-                        <td><input type="button" value="." onclick="numero(this)"></td>
-                        <td><input type="button" value="C" onclick="clean()"></td>
+                        <td><input type="button" value="C" onclick="clean()" class="button non-number"></td>
+                        <td><input type="button" value="0" onclick="numero(this)" class="button number"></td>
+                        <td><input type="button" value="." onclick="pontoFlutuante(this)" class="button non-number"></td>
                     </tr>
                 </table>
-            <!-- <div class="buttons">
-                <div class="operations">
-                    <input type="button" value="+" onclick="calcular(this)">
-                    <input type="button" value="-" onclick="calcular(this)">
-                    <input type="button" value="*" onclick="calcular(this)">
-                    <input type="button" value="/" onclick="calcular(this)">
-                </div>
-                <div class="not-operations">
-                    <div class="not-enter">
-                        <input type="button" value="1" onclick="numero(this)">
-                        <input type="button" value="2" onclick="numero(this)">
-                        <input type="button" value="3" onclick="numero(this)">
-                        <input type="button" value="4" onclick="numero(this)">
-                        <input type="button" value="5" onclick="numero(this)">
-                        <input type="button" value="6" onclick="numero(this)">
-                        <input type="button" value="7" onclick="numero(this)">
-                        <input type="button" value="8" onclick="numero(this)">
-                        <input type="button" value="9" onclick="numero(this)">
-                        <input type="button" value="0" onclick="numero(this)">
-                        <input type="button" value="." onclick="numero(this)">
-                        <input type="button" value="C" onclick="clean()">
-                    </div>
-                    <div class="enter">
-                        <input type="button" value="Enter" onclick="enter()" id="enter">
-                    </div>
-                </div>
-            </div> -->
-        </div>
+            </div>
     </main>
 
     <script src="script.js"></script>

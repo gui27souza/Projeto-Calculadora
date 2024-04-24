@@ -21,11 +21,10 @@ body {
 .container {
     background-color: hsl(0, 0%, 23%);
 
-    box-shadow: 1rem 1rem;
+    box-shadow: 1rem 1rem black;
 
     border-radius: 2rem;
 
-    min-width: 30rem;
     width: 50rem;
 
     padding: 2rem 1rem 1rem;
@@ -38,6 +37,7 @@ body {
 .visor {
     background-color: hsl(0, 0%, 0%);
 
+    border: .3rem solid hsl(0, 0%, 15%);
     border-radius: 1rem;
 
     height: 10rem;
@@ -58,8 +58,7 @@ body {
 }
 
 input {
-    /* input reset */
-    all: unset;
+    /* input reset */ all: unset;
 
     border: .2rem solid hsl(0, 0%, 0%);
     box-shadow: .5rem .5rem hsl(0, 0%, 0%);
@@ -78,6 +77,8 @@ input {
     height: 100%;
 
     padding: 1rem;
+
+    transition: all .1s ease;
 }
 input:active {
     box-shadow: none;
@@ -94,7 +95,6 @@ input:active {
     width: 25%;
     height: 8rem;
 }
-
 
 /* Cores dos Botões */
     .operation {
